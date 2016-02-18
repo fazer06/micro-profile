@@ -1,5 +1,8 @@
 # Rails Single Table Inheritance and Polymorphic Associations
 
+These are really just a set of extra notes and steps for for myself based on
+url below, the extra stuff is for the single table inheritance with devise.
+
 ## http://6ftdan.com/allyourdev/2015/02/10/rails-polymorphic-models/
 
 What is a polymorphic association you might ask?  It’s where an ActiveRecord model can potentially belong to more than one other kind of model record.  So the single instance of your car belongs to you, a person, whereas other cars may individually belong to a car lot, or a business.
