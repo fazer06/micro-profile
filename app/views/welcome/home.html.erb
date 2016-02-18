@@ -1,0 +1,22 @@
+<div class="jumbotron">
+  <h1>Polymorphic Associations</h1>
+  <p>This is a demo of Rails Polymorphic Associations where a model can potentially belong to more than one other kind of model record.
+  </p>
+	
+	 <% if user_signed_in? %>
+
+		<%= link_to destroy_user_session_path, method: :delete, class: "btn btn-primary" do %>
+			Sign Out! <span class="fa fa-user"></span>
+		<% end %>
+
+	<% else %>
+
+		<%= link_to new_user_session_path, 
+			controller: 'registrations_controller', 
+			class: "btn btn-primary" do %>
+				Sign In <span class="fa fa-user"></span>
+		<% end %>
+
+	<% end %>
+
+</div>

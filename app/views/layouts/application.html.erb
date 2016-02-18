@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MicroProfile</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= render 'layouts/nav' %>
+
+<div class="container">
+
+	<% if notice %>
+		<div class="alert alert-info">
+			<%= flash.notice %>
+		</div>
+	<% end %>
+
+	<% if alert %>
+		<div class="alert alert-warning">
+			<%= flash.alert %>
+		</div>
+	<% end %>
+
+
+	<%= yield %>
+
+</div>
+
+</body>
+</html>
